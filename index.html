@@ -115,6 +115,14 @@ body{background:radial-gradient(circle at 80% -10%,rgba(95,136,189,.13),transpar
 .audit-card:target{outline:1px solid rgba(232,187,104,.6);box-shadow:0 0 0 4px rgba(232,187,104,.07)}
 @media(max-width:760px){.finder-matches{grid-template-columns:1fr}}
 
+
+/* Hero metadata — compact ImDefild-style update line */
+.hero-meta{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin:0 0 14px;font-size:11px;font-weight:850;letter-spacing:.12em;text-transform:uppercase;color:#8f9cab}
+.hero-meta-game{color:#e8bb68}
+.hero-meta-dot{width:4px;height:4px;border-radius:50%;background:#e8bb68;box-shadow:0 0 10px rgba(232,187,104,.35)}
+.hero-meta-patch{color:#c4ccd5}
+.hero-meta-date{padding-left:10px;margin-left:2px;border-left:1px solid rgba(255,255,255,.13);color:#7f8b98;letter-spacing:.08em}
+@media(max-width:560px){.hero-meta{gap:7px;font-size:10px}.hero-meta-date{padding-left:8px}}
 </style>
 </head>
 <body>
@@ -124,8 +132,12 @@ body{background:radial-gradient(circle at 80% -10%,rgba(95,136,189,.13),transpar
 <div class="side-title">Field Guide</div>
 <a class="navlink active" href="#top"><span class="num">00</span><span>Start</span></a><a class="navlink" href="#start-here"><span class="num">01</span><span>Start Here</span></a><a class="navlink" href="#resource-finder"><span class="num">02</span><span>Resource Finder</span></a><button class="navlink nav-group" data-group-key="daily" type="button"><span class="num">03</span><span>Daily &amp; Scheduled</span></button><button class="navlink nav-group" data-group-key="weekly" type="button"><span class="num">04</span><span>Weekly Shops</span></button><button class="navlink nav-group" data-group-key="raids" type="button"><span class="num">05</span><span>Raid Shops</span></button><button class="navlink nav-group" data-group-key="craft" type="button"><span class="num">06</span><span>Crafting &amp; Exchange</span></button><button class="navlink nav-group" data-group-key="power" type="button"><span class="num">07</span><span>Books &amp; Systems</span></button><button class="navlink nav-group" data-group-key="side" type="button"><span class="num">08</span><span>Islands &amp; Sailing</span></button><button class="navlink nav-group" data-group-key="optional" type="button"><span class="num">09</span><span>Market &amp; Optional</span></button><a class="navlink" href="#current-events"><span class="num">10</span><span>Current Events</span></a><a class="navlink" href="#visual-help"><span class="num">11</span><span>Locations</span></a><div class="sidebar-note"><b>Lost Ark ImDefild</b><span>Updated Oct. 3, 2026</span></div>
 </aside><div class="site-content"><header class="hero" id="top">
-<div class="eyebrow">Progression Resource Guide</div>
-<div class="guide-version">UPDATED FOR DIMENSIONS UNBOUND · OCTOBER 2026</div><h1>Ultimate Progression Resource Guide</h1>
+<div class="hero-meta" aria-label="Guide update information">
+<span class="hero-meta-game">Lost Ark</span>
+<span class="hero-meta-dot" aria-hidden="true"></span>
+<span class="hero-meta-patch">Dimensions Unbound</span>
+<span class="hero-meta-date">October 2026</span>
+</div><h1>Ultimate Progression Resource Guide</h1>
 <p>All Shops, Dailies, Weeklies, Locations &amp; Progression Sources.</p>
 <div aria-label="Choose item level range" class="range-switch" role="tablist">
 <button aria-selected="true" class="range-btn active" data-stage="lower" role="tab"><b>1640 → 1729</b><small>Lower Tier 4 · Powerpass / Tier 4 gear</small></button>
